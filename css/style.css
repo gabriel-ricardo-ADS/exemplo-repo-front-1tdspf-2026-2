@@ -41,3 +41,8 @@ header h1 {
   display: block;
   clear: both;
 }
+
+//active
+.navbar li a.active {
+  background-color: #04AA6D;
+}
