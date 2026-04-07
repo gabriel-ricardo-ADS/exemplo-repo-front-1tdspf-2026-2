@@ -42,7 +42,12 @@ header h1 {
   clear: both;
 }
 
-//active
+/* active */
 .navbar li a.active {
   background-color: #04AA6D;
+}
+
+/* direita */
+.navbar li.right {
+  float: right;
 }
