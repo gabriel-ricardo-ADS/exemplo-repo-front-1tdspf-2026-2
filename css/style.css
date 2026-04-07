@@ -10,16 +10,17 @@ header h1 {
 
 
 .navbar {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  display: flex;
   background-color: #333;
+  align-items: center;
 }
 
 
 .navbar li {
-  float: left;
+  flex: 1;
 }
 
 .navbar li a {
@@ -47,7 +48,12 @@ header h1 {
   background-color: #04AA6D;
 }
 
+/* centro */
+.navbar li.center {
+  text-align: center;
+}
+
 /* direita */
 .navbar li.right {
-  float: right;
+  text-align: right;
 }
