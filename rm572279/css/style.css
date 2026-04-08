@@ -6,24 +6,31 @@
 }
 /* PALETA DE CORES */
 :root {
-  --cor-primaria: #04AA6D;
-  --cor-secundaria: #1a1b1c;
-  --cor-fundo: #f4f4f4;
+  --cor-primaria: #2ecc71;   
+  --cor-secundaria: #0f172a; 
+  --cor-fundo: #f8fafc;      
   --cor-texto: #ffffff;
+  --cor-destaque: #38bdf8;   
+  --cor-texto-escuro: #1f2937;
 }
 header {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
+  background-color: var(--cor-secundaria);
+  color: var(--cor-destaque);
+  padding: 15px;
 }
 
 header h1 {
     font-family: Arial, sans-serif;
+    color: var(--cor-primaria)
+
 }
 body {
   font-family: Arial, sans-serif;
+  color: var(--cor-texto-escuro)
 }
 main {
   padding: 20px;
+  color: var(--cor-texto-escuro);
 }
 
 .navbar {
@@ -31,13 +38,16 @@ main {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: space-between;
   background-color: var(--cor-secundaria);
   align-items: center;
+  gap: 10px;
+  padding: 0 10px;
 }
 
 
 .navbar li {
-  flex: 1;
+  flex: unset;
 }
 
 .navbar li a {
@@ -50,7 +60,8 @@ main {
 
 
 .navbar li a:hover {
-  background-color: #111;
+ background-color: var(--cor-destaque);
+  color: #000;
 }
 
 
@@ -65,20 +76,10 @@ main {
  background-color: var(--cor-primaria);
 }
 
-/* centro */
-.navbar li.center {
-  text-align: center;
-}
-
-/* direita */
-.navbar li.right {
-  text-align: right;
-}
-
 .hero {
-  background-color: var(--cor-fundo);
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
   text-align: center;
-  padding: 40px;
+  padding: 60px 20px;
 }
 
 .hero h2 {
@@ -90,26 +91,31 @@ main {
 }
 
 .hero button {
-  padding: 10px 20px;
+  padding: 12px 25px;
   border: none;
-  background-color: #04AA6D;
-  color: white;
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto);
+  font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .hero button:hover {
-  background-color: #038e5a;
+  background-color: var(--cor-destaque);
+  color: #000;
 }
 
 footer {
-  background-color: #1a1b1c;
-  color: white;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
   text-align: center;
   padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
-
 footer a {
-  color: #04AA6D;
+ color: var(--cor-primaria);
   text-decoration: none;
 }
 
